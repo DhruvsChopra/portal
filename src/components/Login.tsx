@@ -93,7 +93,7 @@ const LoginPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <h1 className="header-bottom">NOT A COOKING COMPETITION</h1>
+        <h1 className="header-bottom">BEST OF LUCK</h1>
       </Landing>
     </div>
   );
