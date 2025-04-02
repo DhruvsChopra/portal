@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import QuesNavbar from './components/QuesNavbar';
-import QuestionComponent from './components/QuestionComponent';
-import EditorWindow from './components/EditorWindow';
-import { staticQuestions } from './data/staticQuestions';
+import QuesNavbar from './QuesNavbar';
+import QuestionComponent from './QuestionComponent';
+import EditorWindow from './EditorWindow';
+import { staticQuestions } from '../data/staticQuestions';
 
 const App: React.FC = () => {
   const [, setTimeOver] = useState<boolean>(false);
