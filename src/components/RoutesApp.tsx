@@ -7,8 +7,8 @@ import Login from './Login';
 const RoutesApp: React.FC = () => {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/*" element={<App />} />
+      <Route path="/*" element={<Login />} />
+      <Route path="/App" element={<App />} />
     </Routes>
   );
 };
