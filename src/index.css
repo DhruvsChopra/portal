@@ -3,7 +3,7 @@
 html, body { margin: 0; padding: 0; height: 100%; }
 body { font-family: Arial, sans-serif; background-color: #202020; }
 .container {  overflow: hidden; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
-.header-top { padding-top: 2px; font-size: 2rem; font-weight: bold; color: #ff5555; }
+.header-top { padding-top: 2px; font-size: 2rem; font-weight: bold; color: #F14A16; }
 .header-bottom { padding-top: 2px; font-size: 2rem; font-weight: bold; color: #fff; }
 .content { display: flex; flex-direction: row; width: 100%; margin-top: 2rem; }
 .left, .right { width: 50%; }
@@ -11,14 +11,14 @@ body { font-family: Arial, sans-serif; background-color: #202020; }
 .left-top { margin-left: 10px; margin-right: 10px; padding-left: 14px; }
 .login-card { width: 450px; height: 510px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #444; color: #fff; clip-path: polygon(0 90px, 90px 0, 100% 0, 100% 10px, 100% 85%, 80% 100%, 0 100%, 0 100%); }
 .login-inner { width: 450px; height: 575px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000; color: #fff; transform: scale(0.95); clip-path: polygon(0 90px, 90px 0, 100% 0, 100% 10px, 100% 85%, 80% 100%, 0 100%, 0 100%); }
-.login-inner h1 { margin-bottom: 1.5rem; padding: 20px; font-size: 2rem; font-weight: bold; color: #f0a500; }
+.login-inner h1 { margin-bottom: 1.5rem; padding: 20px; font-size: 2rem; font-weight: bold; color: #F14A16; }
 form { display: flex; flex-direction: column; align-items: center; }
 .input-field { width: 390px; padding: 10px; margin-bottom: 1.5rem; border: none; border-radius: 4px; background-color: #444; color: #fff; }
 .input-field::placeholder { color: #fff; }
-.error { color: #ff5555; margin-bottom: 1rem; font-size: 0.9rem; }
+.error { color: #F14A16; margin-bottom: 1rem; font-size: 0.9rem; }
 .password-container { position: relative; width: 390px; margin-bottom: 1.5rem; }
 .toggle-password { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #000; }
-button.btn { width: 100px; padding: 12px; border: none; border-radius: 4px; background-color: #ff5555; color: #fff; font-weight: bold; cursor: pointer; margin-top: 1rem; }
+button.btn { width: 100px; padding: 12px; border: none; border-radius: 4px; background-color: #F14A16; color: #fff; font-weight: bold; cursor: pointer; margin-top: 1rem; }
 button.btn:disabled { opacity: 0.6; cursor: not-allowed; }
 @media (max-width: 800px) {
   .content { flex-direction: column; align-items: center; }

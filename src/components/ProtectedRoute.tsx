@@ -1,4 +1,4 @@
-// ProtectedRoute.tsx
+
 import React, { JSX } from 'react';
 import { Navigate } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ interface ProtectedRouteProps {
 }
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
-  const isLoggedIn = !!localStorage.getItem('user'); // replace with real auth logic
+  const isLoggedIn = !!localStorage.getItem('user'); 
 
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />;

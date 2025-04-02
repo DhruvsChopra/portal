@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-// Make sure these imports match your Three.js version and file structure.
+
 import { OrbitControls } from 'three-stdlib';
 import { ImprovedNoise } from 'three-stdlib';
 
@@ -27,7 +27,7 @@ const Landing: React.FC<LandingProps> = ({ children }) => {
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(width, height);
-    renderer.setClearColor(0x000000, 0); // transparent background
+    renderer.setClearColor(0x000000, 0); 
     mountRef.current.appendChild(renderer.domElement);
 
     const size = 0.5;
@@ -52,7 +52,6 @@ const Landing: React.FC<LandingProps> = ({ children }) => {
     metacube.add(mesh);
     scene.add(metacube);
 
-    // Add an update function to metacube's userData for per-frame updates.
     metacube.userData = {
       update: (t: number) => {
         let f = 0;

@@ -18,7 +18,7 @@ const LoginPage: React.FC = () => {
     setIsSubmitting(true);
     alert("Cooking...\nLogged in successfully!");
     setTimeout(() => {
-      navigate('/'); // Redirect to your main app route
+      navigate('/App'); 
     }, 1000);
   };
 
@@ -29,7 +29,7 @@ const LoginPage: React.FC = () => {
         <div className="content">
           <div className="left">
             <div className="left-top">
-              {/* Additional left content can go here */}
+      
             </div>
           </div>
           <div className="right">
