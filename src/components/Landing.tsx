@@ -73,7 +73,9 @@ const Landing: React.FC<LandingProps> = ({ children }) => {
           }
         }
         mesh.instanceMatrix.needsUpdate = true;
-        mesh.instanceColor.needsUpdate = true;
+        if (mesh.instanceColor) {
+          mesh.instanceColor.needsUpdate = true;
+        }
       }
     };
 
