@@ -1,7 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-// Make sure these imports match your Three.js version and file structure.
 import { OrbitControls } from 'three-stdlib';
 import { ImprovedNoise } from 'three-stdlib';
 const Landing = ({ children }) => {
@@ -21,7 +20,7 @@ const Landing = ({ children }) => {
         camera.position.z = amt * 1.5;
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(width, height);
-        renderer.setClearColor(0x000000, 0); // transparent background
+        renderer.setClearColor(0x000000, 0);
         mountRef.current.appendChild(renderer.domElement);
         const size = 0.5;
         const geometry = new THREE.BoxGeometry(size, size, size);
@@ -41,7 +40,6 @@ const Landing = ({ children }) => {
         const metacube = new THREE.Group();
         metacube.add(mesh);
         scene.add(metacube);
-        // Add an update function to metacube's userData for per-frame updates.
         metacube.userData = {
             update: (t) => {
                 let f = 0;
